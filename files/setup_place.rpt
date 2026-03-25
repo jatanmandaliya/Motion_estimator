@@ -1,0 +1,78 @@
+Information: The RC mode used is VR for design 'top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 1483, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1483, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : top
+Version: S-2021.06-SP5-1
+Date   : Mon Dec  9 14:53:40 2024
+****************************************
+
+  Startpoint: ctl_u/count_reg[3] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[3] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                   0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  ctl_u/count_reg[3]/CK (SAEDRVT14_FSDPQ_V2LP_0P5)
+                                                   0.00      0.00 r
+  ctl_u/count_reg[3]/Q (SAEDRVT14_FSDPQ_V2LP_0P5)
+                                                   0.05      0.05 f
+  ctl_u/U48/X (SAEDRVT14_INV_S_0P5)                0.04      0.09 r
+  ctl_u/U26/X (SAEDHVT14_ND2_CDC_1)                0.03      0.12 f
+  ctl_u/U13/X (SAEDRVT14_INV_S_0P5)                0.02      0.14 r
+  ctl_u/U38/X (SAEDHVT14_ND2_CDC_1)                0.03      0.16 f
+  ctl_u/U14/X (SAEDRVT14_INV_S_0P5)                0.01      0.17 r
+  ctl_u/U36/X (SAEDRVT14_AN3_0P5)                  0.02      0.20 r
+  ctl_u/U35/X (SAEDHVT14_AN2_MM_0P5)               0.01      0.21 r
+  comp_u/U20/X (SAEDRVT14_NR2_1)                   0.02      0.23 f
+  comp_u/U126/X (SAEDHVT14_ND2B_U_0P5)             0.03      0.26 r
+  comp_u/U108/X (SAEDHVT14_AO21B_0P5)              0.01      0.27 f
+  comp_u/U134/X (SAEDRVT14_AO221_0P5)              0.02      0.29 f
+  comp_u/U138/X (SAEDHVT14_OAI21_0P5)              0.01      0.30 r
+  comp_u/U100/X (SAEDHVT14_AO21B_0P5)              0.01      0.31 f
+  comp_u/U129/X (SAEDRVT14_AO221_0P5)              0.01      0.32 f
+  comp_u/U98/X (SAEDRVT14_OA21B_1)                 0.02      0.34 f
+  comp_u/U123/X (SAEDRVT14_AO221_0P5)              0.02      0.36 f
+  comp_u/U141/X (SAEDHVT14_ND2B_U_0P5)             0.01      0.37 f
+  comp_u/U142/X (SAEDRVT14_OA21B_1)                0.01      0.38 f
+  comp_u/U143/X (SAEDHVT14_AO221_0P5)              0.01      0.40 f
+  comp_u/U29/X (SAEDRVT14_OA221_U_0P5)             0.01      0.41 f
+  comp_u/U27/X (SAEDRVT14_AO221_0P5)               0.01      0.42 f
+  comp_u/U32/X (SAEDRVT14_OA221_U_0P5)             0.01      0.43 f
+  comp_u/U30/X (SAEDRVT14_AO221_0P5)               0.01      0.44 f
+  comp_u/U139/X (SAEDHVT14_OAI21_0P5)              0.01      0.45 r
+  comp_u/U137/X (SAEDRVT14_AO21B_0P5)              0.00      0.45 f
+  comp_u/U144/X (SAEDHVT14_OAI21_0P5)              0.01      0.46 r
+  comp_u/U120/X (SAEDRVT14_OAI311_0P5)             0.05      0.52 f
+  comp_u/U140/X (SAEDRVT14_INV_0P5)                0.05      0.57 r
+  comp_u/U77/X (SAEDSLVT14_AO221_0P5)              0.02      0.59 r
+  comp_u/BestDist_reg[3]/D (SAEDRVT14_FDP_V2LP_1)
+                                                   0.00      0.59 r
+  data arrival time                                          0.59
+
+  clock ideal_clock1 (rise edge)                   0.90      0.90
+  clock network delay (ideal)                      0.00      0.90
+  comp_u/BestDist_reg[3]/CK (SAEDRVT14_FDP_V2LP_1)
+                                                   0.00      0.90 r
+  library setup time                              -0.02      0.88
+  data required time                                         0.88
+  ------------------------------------------------------------------------
+  data required time                                         0.88
+  data arrival time                                         -0.59
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.29
+
+
+1

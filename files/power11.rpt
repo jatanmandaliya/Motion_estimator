@@ -1,0 +1,62 @@
+Loading db file '/packages/process_kit/generic/generic_14nm/stdcell_slvt/db_ccs/saed14slvt_ff0p88v125c.db'
+Loading db file '/packages/process_kit/generic/generic_14nm/stdcell_lvt/db_ccs/saed14lvt_ff0p88v125c.db'
+Loading db file '/packages/process_kit/generic/generic_14nm/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: O-2018.06-SP4
+Date   : Mon Dec  9 13:50:24 2024
+****************************************
+
+
+Library(s) Used:
+
+    saed14slvt_ff0p88v125c (File: /packages/process_kit/generic/generic_14nm/stdcell_slvt/db_ccs/saed14slvt_ff0p88v125c.db)
+    saed14hvt_ff0p88v125c (File: /packages/process_kit/generic/generic_14nm/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db)
+    saed14rvt_ff0p88v125c (File: /packages/process_kit/generic/generic_14nm/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db)
+    saed14lvt_ff0p88v125c (File: /packages/process_kit/generic/generic_14nm/stdcell_lvt/db_ccs/saed14lvt_ff0p88v125c.db)
+
+
+Operating Conditions: ff0p88v125c   Library: saed14hvt_ff0p88v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    8000              saed14hvt_ff0p88v125c
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 377.7492 uW   (82%)
+  Net Switching Power  =  84.7438 uW   (18%)
+                         ---------
+Total Dynamic Power    = 462.4930 uW  (100%)
+
+Cell Leakage Power     = 701.8221 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         311.4056           13.9255        1.6035e+08          485.6851  (  41.71%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     66.3439           70.8182        5.4147e+08          678.6303  (  58.29%)
+--------------------------------------------------------------------------------------------------
+Total            377.7495 uW        84.7437 uW     7.0182e+08 pW     1.1643e+03 uW
+1
